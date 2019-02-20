@@ -1,5 +1,5 @@
 dep:
-	if [ ! -d "env" ];then virtualenv env;fi
+	if [ ! -d "env" ];then virtualenv -p python3.6 env;fi
 	env/bin/pip install -r requirements.txt
 
 proto:
